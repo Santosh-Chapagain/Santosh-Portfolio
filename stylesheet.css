@@ -631,17 +631,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    min-height: auto;
-    /* Changed from 100vh for better mobile experience */
-    padding: 80px 10% 40px;
-    /* Adjusted padding */
+    min-height: auto; /* Changed from 100vh for better mobile experience */
+    padding: 80px 10% 40px; /* Adjusted padding */
     text-align: center;
 }
 
 .contact-text h2 {
     /* Using clamp for fluid font size */
-    font-size: clamp(2.5rem, 10vw, 5rem);
-    /* min, preferred, max */
+    font-size: clamp(2.5rem, 10vw, 5rem); /* min, preferred, max */
     line-height: 1.2;
 }
 
@@ -661,8 +658,7 @@ body {
     font-size: clamp(0.9rem, 2.5vw, 1rem);
     line-height: 1.6;
     margin-bottom: 2rem;
-    max-width: 600px;
-    /* Added for better readability on large screens */
+    max-width: 600px; /* Added for better readability on large screens */
     margin-left: auto;
     margin-right: auto;
 }
@@ -716,6 +712,25 @@ body {
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
     .contact {
+        padding: 60px 5% 30px; /* Reduce padding on smaller screens */
+    }
+
+    .contact-icons {
+        /* Allow icons to wrap on smaller screens */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px; /* Add some space between wrapped icons */
+    }
+
+    .contact-icons a i {
+        margin: 0;
+    }
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .contact {
         padding: 60px 5% 30px;
         /* Reduce padding on smaller screens */
     }
@@ -732,49 +747,6 @@ body {
     .contact-icons a i {
         margin: 0;
     }
-}
-.contact-form form {
-    position: relative;
-}
-
-.contact-form form input,
-.contact-form form textarea {
-    border: none;
-    outline: none;
-    width: 100%;
-    padding: 18px;
-    background: #051129;
-    color: #ededed;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid #0ef;
-}
-
-.contact-form textarea {
-    resize: none;
-    height: 220px;
-}
-
-.contact-form form .send {
-    display: inline-block;
-    padding: 14px 60px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 18px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
-    transition: .3s;
-}
-
-.contact-form form .send:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
 }
 
 /* ======== KEYFRAMES FOR ANIMATIONS ======== */
