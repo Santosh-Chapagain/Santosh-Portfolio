@@ -259,21 +259,28 @@
     </div>
 
     <div class="contact-form">
-    <form action="https://formsubmit.co/314725e50e67701e9d838cfee1af0a4b" method="POST">
-        <input type="text" name="name" placeholder="Enter Your Name" required>
-        <input type="email" name="email" placeholder="Enter your Email" required>
-        <input type="text" name="subject" placeholder="Enter your Subject">
-        <textarea name="message" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
-
-        <!-- Optional settings -->
+        <form action="https://formsubmit.co/314725e50e67701e9d838cfee1af0a4b" method="POST">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="email" name="email" placeholder="Enter your Email" required>
+            <input type="text" name="subject" placeholder="Enter your Subject">
+            <textarea name="message" cols="40" rows="10" placeholder="Enter your Message" required></textarea>
         
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="box">
-        <input type="hidden" name="_next" value="https://codewithsantosh.tech">
+            <!-- 🔒 Google reCAPTCHA widget -->
+            <div class="g-recaptcha" data-sitekey="6LdFZIIrAAAAAIweYNNYvclSamx9R-xdX5CdbTcv"></div>
+        
+            <!-- 🛡️ Tell FormSubmit to verify CAPTCHA -->
+            <input type="hidden" name="_captcha" value="true">
+        
+            <!-- ✅ Optional extras -->
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://codewithsantosh.tech">
+        
+            <input type="submit" value="Submit" class="send">
+        </form>
 
+<!-- 🧠 Load reCAPTCHA JavaScript -->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-        <input type="submit" value="Submit" class="send">
-    </form>
 </div>
 
 
