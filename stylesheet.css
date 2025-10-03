@@ -326,7 +326,7 @@ body {
 
 .container1 {
     flex: 1 1 45%;
-    min-width: 350px
+    min-width: 350px;
     /* Control max width on large screens */
     background: #051129;
     padding: 40px 50px;
@@ -395,23 +395,29 @@ body {
 }
 
 .progress-line.python span {
-    width: 80%;
+    width: 100%;
 }
 
 .progress-line.numpy span {
-    width: 70%;
+    width: 100%;
 }
 
 .progress-line.pandas span {
-    width: 80%;
+    width: 100%;
 }
 
 .progress-line.matplot span {
-    width: 65%;
+    width: 100%;
 }
 
 .progress-line.sql span {
-    width: 90%;
+    width: 100%;
+}
+.progress-line.Sklearn span {
+    width: 100%;
+}
+.progress-line.git span {
+    width: 100%;
 }
 
 /* Professional Skills Radial Bars */
@@ -446,10 +452,10 @@ body {
 .radial-bars .radial-bar .progress-bar {
 
     stroke-width: 10;
-    stop-color: black;
+    stroke: black;
     fill: transparent;
     stroke-dasharray: 502;
-    stroke-dashoffset: 502;
+    stroke-dashoffset: 0;
     stroke-linecap: round;
     animation: animate-bar 1s linear forwards;
 
@@ -457,7 +463,7 @@ body {
 
 @keyframes animate-bar {
     100% {
-        stroke-dashoffset: -1;
+        stroke-dashoffset: 0;
     }
 }
 
@@ -489,27 +495,25 @@ body {
 
 @keyframes animate-path1 {
     100% {
-        stroke-dashoffset: 100.53;
-        ;
+        stroke-dashoffset: 0;
     }
 }
 
 @keyframes animate-path2 {
     100% {
-        stroke-dashoffset: 75.40;
-        ;
+        stroke-dashoffset: 0;
     }
 }
 
 @keyframes animate-path3 {
     100% {
-        stroke-dashoffset: 150.80;
+        stroke-dashoffset: 0;
     }
 }
 
 @keyframes animate-path4 {
     100% {
-        stroke-dashoffset: 150.80;
+        stroke-dashoffset: 0;
     }
 }
 
@@ -582,6 +586,7 @@ body {
     left: 0;
     bottom: 0;
     overflow: hidden;
+    /* keep this for overall layer */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -602,6 +607,26 @@ body {
     color: #000;
     font-size: 1rem;
     line-height: 1.8;
+    max-height: 120px;
+    /* adjust as needed */
+    overflow-y: auto;
+    padding-right: 10px;
+    /* for scrollbar spacing */
+    margin-bottom: 1rem;
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: #0ef #fff;
+    /* Firefox */
+}
+
+.layer p::-webkit-scrollbar {
+    width: 6px;
+    background: #fff;
+}
+
+.layer p::-webkit-scrollbar-thumb {
+    background: #0ef;
+    border-radius: 6px;
 }
 
 .layer i {
