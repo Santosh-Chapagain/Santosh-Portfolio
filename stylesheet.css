@@ -252,67 +252,13 @@ body {
     text-align: center;
     font-size: 60px;
     margin-bottom: 50px;
+    margin-top: 80px;
 }
 
 .sub-title span {
     color: #0ef;
 }
 
-.services-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.services-list div {
-    background-color: transparent;
-    padding: 40px;
-    font-size: 14px;
-    border-radius: 20px;
-    transition: background 0.5s, transform 0.5s;
-    box-shadow: 0 0 10px #012290f7, 0 0 20px #0053b8f7;
-    border: 1px solid #0ef;
-}
-
-.services-list div:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px #0ef, 0 0 40px #0ef;
-}
-
-.services-list div i {
-    font-size: 50px;
-    margin-bottom: 30px;
-    color: #0ef;
-}
-
-.services-list div h2 {
-    font-size: 24px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.services-list div p {
-    line-height: 1.6;
-}
-
-.services-list div a.read {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #0ef;
-    border-radius: 40px;
-    font-size: 14px;
-    color: #081b29;
-    letter-spacing: 1px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 20px;
-    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
-    transition: .3s;
-}
-
-.services-list div a.read:hover {
-    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan;
-}
 
 
 #skill {
