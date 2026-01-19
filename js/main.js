@@ -2,7 +2,7 @@
 
 // Typed.js initialization
 var typed = new Typed(".text", {
-    strings: ["Data Scientist", "Python Programmer"],
+    strings: ["AI/ML Engineer", "Data Scientist"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -67,3 +67,15 @@ window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
     if (header) header.classList.toggle('sticky', window.scrollY > 100);
 });
+
+/* ======== SCROLL REVEAL ANIMATIONS ======== */
+ScrollReveal({
+    distance: '80px',
+    duration: 2000,
+    delay: 200
+});
+
+ScrollReveal().reveal('.home-content, .heading, .main-text h2', { origin: 'top' });
+ScrollReveal().reveal('.home-img, .certificate-content, .portfolio-content, .contact-text', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .technical-bars', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });

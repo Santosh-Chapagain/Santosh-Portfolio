@@ -1,282 +1,470 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon-32x32.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png" />
     <title>Code with Santosh</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="css/stylesheet.css" />
 
     <!-- enable default smooth scrolling as a fallback -->
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-</head>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbar">
-            <a href="index.html" style="--i:1" class="active">Home</a>
-            <a href="#about" style="--i:2" class="active">About</a>
-            <a href="#skill" style="--i:3" class="active">Skill</a>
-            <a href="#portfolio" style="--i:4" class="active">Portfolio</a>
-            <a href="#contact" style="--i:5" class="active">Contact</a>
-        </nav>
+      <a href="#" class="logo">Portfolio</a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="index.html" style="--i: 1" class="active">Home</a>
+        <a href="#skill" style="--i: 3" class="active">Skill</a>
+        <a href="#portfolio" style="--i: 4" class="active">Projects</a>
+        <a href="#certificates" style="--i: 6" class="active">Certificates</a>
+        <a href="#contact" style="--i: 5" class="active">Contact</a>
+      </nav>
     </header>
 
+    <div class="contact-icons-sidebar">
+      <a href="https://www.facebook.com/santosh.chapagain.376"
+        ><i class="bx bxl-facebook-circle"></i
+      ></a>
+      <a href="https://www.instagram.com/santosz_79/"
+        ><i class="bx bxl-instagram"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/santosh-chapagain-041629259/"
+        ><i class="bx bxl-linkedin"></i
+      ></a>
+      <a href="https://github.com/Santosh-Chapagain"
+        ><i class="bx bxl-github"></i
+      ></a>
+    </div>
+
     <section class="home" id="home">
-        <div class="home-content">
-            <h3>Hello , It’s me</h3>
-            <h1>Santosh Chapagain</h1>
-            <h3>And I’m <span class="text"></span></h3>
-            <p> I’m aspiring data scientist and Python enthusiast
-                <br>Passionate about turning data into meaningful insights to solve real-world problems.
-            </p>
-            <div class="home-sci">
-                <a href="https://www.facebook.com/santosh.chapagain.376" style="--i:6" class="active"><i
-                        class='bx bxl-facebook'></i></a>
-                <a href="https://www.instagram.com/santosz_79/" style="--i:7" class="active"><i
-                        class='bx bxl-instagram'></i></a>
-                <a href="https://www.linkedin.com/in/santosh-chapagain-041629259/" style="--i:8" class="active"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/Santosh-Chapagain" style="--i:9" class="active"><i
-                        class='bx bxl-github'></i></a>
-            </div>
+      <div class="home-content">
+        <h3>Hello , It’s me</h3>
+        <h1>Santosh Chapagain</h1>
+        <h3>And I’m <span class="text"></span></h3>
 
-            <!-- changed href to target the about section -->
-            <a href="#about" class="btn-box">More About Me</a>
+
+
+        <!-- changed href to target the about section -->
+        <div class="btn-group">
+          <!-- <a href="#about" class="btn-box">More About Me</a> -->
+          <a href="CV.pdf" download class="btn-box">Download CV</a>
         </div>
-        <div class="glow-image-container">
-            <img src="pp1.jpg" alt="Profile Image">
-        </div>
-        <span class="home-imghover"></span>
+      </div>
+      <div class="glow-image-container">
+        <img src="images/pp2.png" alt="Profile Image" />
+      </div>
+      <span class="home-imghover"></span>
     </section>
 
-    <section class="about" id="about">
-        <div class="about-img">
-            <img class="glow-image-container-2" src="pp1.jpg" alt="Profile Image">
-        </div>
-        <div class="about-text">
-            <h2>About<span>Me</span></h2>
-            <h4>Aspiring Data Scientist</h4>
-            <p>Hi, I’m Santosh – an aspiring data scientist and a Python enthusiast from Nepal. I enjoy exploring data
-                to find
-                hidden patterns, build insights, and solve real-world problems. My journey began with learning Python,
-                and since then,
-                I’ve been deeply interested in data analysis, machine learning, and creating meaningful projects that
-                help me grow as a
-                problem solver.
-
-                I believe in continuous learning and love challenging myself with new concepts, projects, and
-                competitions.
-
-                I’m excited to connect with like-minded people, work on data-driven projects, and contribute to
-                impactful solutions in
-                the future.</p>
-
-            <!-- changed href to target the about section (if you want this to do something else, update accordingly) -->
-            <!-- <a href="#about" class="btn-box">More About Me</a> -->
-        </div>
-    </section>
-
-    
+   
     <h1 class="sub-title">My <span>Skills</span></h1>
 
     <section id="skill">
-        <div class="container1">
-            <h1 class="heading">Technical Skills</h1>
-            <div class="technical-bars">
-                <div class="bar"><i style="color: #c32e39" class="fab fa-python fa-2x"></i>
-                    <div class="info">
-                        <span>Python</span>
-                    </div>
-                    <div class="progress-line python">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><svg style="width:40px;height: 40px;" role="img" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>NumPy</title>
-                        <path
-                            d="M10.315 4.876L6.3048 2.8517l-4.401 2.1965 4.1186 2.0683zm1.8381.9277l4.2045 2.1223-4.3622 2.1906-4.125-2.0718zm5.6153-2.9213l4.3193 2.1658-3.863 1.9402-4.2131-2.1252zm-1.859-.9329L12.021 0 8.1742 1.9193l4.0068 2.0208zm-3.0401 16.7443V24l4.7107-2.3507-.0053-5.3085zm4.7037-4.2057l-.0052-5.2528-4.6985 2.3356v5.2546zm5.6553-.9845v5.327l-4.0178 2.0052-.0029-5.3028zm0-1.8626V6.4214l-4.0253 2.001.0034 5.2633zM11.2062 11.571L8.0333 9.9756v6.895s-3.8804-8.2564-4.2399-8.998c-.0463-.0957-.2371-.2007-.2858-.2262C2.8118 7.2812.773 6.2485.773 6.2485V18.43l2.8204 1.5076v-6.3674s3.8392 7.3775 3.878 7.458c.0389.0807.4245.8582.8362 1.1314.5485.363 2.8992 1.7766 2.8992 1.7766z" />
-                    </svg>
-        
-                    <div class="info">
-                        <span>Numpy</span>
-                    </div>
-                    <div class="progress-line numpy">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><svg style="width:40px;height: 40px;" role="img" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <title>pandas</title>
-                        <path
-                            d="M16.922 0h2.623v18.104h-2.623zm-4.126 12.94h2.623v2.57h-2.623zm0-7.037h2.623v5.446h-2.623zm0 11.197h2.623v5.446h-2.623zM4.456 5.896h2.622V24H4.455zm4.213 2.559h2.623v2.57H8.67zm0 4.151h2.623v5.447H8.67zm0-11.187h2.623v5.446H8.67Z" />
-                    </svg>
-        
-                    <div class="info">
-                        <span>Pandas</span>
-                    </div>
-                    <div class="progress-line pandas">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><i style="width:40px;height: 40px;" class="fa-solid fa-chart-simple"></i>
-                    <div class="info">
-                        <span>Matplotlib&Seaborn</span>
-                    </div>
-                    <div class="progress-line matplot">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><img src="https://cdn.simpleicons.org/mysql" width="40" alt="MySQL Icon">
-        
-                    <div class="info">
-                        <span>SQL</span>
-                    </div>
-                    <div class="progress-line sql">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><img src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png" width="40"
-                        alt="Sk-Learn Icon">
-        
-                    <div class="info">
-                        <span>Sklearn</span>
-                    </div>
-                    <div class="progress-line Sklearn">
-                        <span></span>
-                    </div>
-                </div>
-                <div class="bar"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40"
-                        alt="Git Icon">
-        
-                    <div class="info">
-                        <span>Git</span>
-                    </div>
-                    <div class="progress-line git">
-                        <span></span>
-                    </div>
-                </div>
+      <div class="container1">
+        <h1 class="heading">Technical <span></span>Skills</span></h1>
+        <div class="technical-bars">
+          <div class="bar">
+            <i style="color: #c32e39" class="fab fa-python fa-2x"></i>
+            <div class="info">
+              <span>Python</span>
             </div>
+            <div class="progress-line python">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+              width="40"
+              alt="C Icon"
+            />
+            <div class="info">
+              <span>C</span>
+            </div>
+            <div class="progress-line c">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
+              width="40"
+              alt="C++ Icon"
+            />
+            <div class="info">
+              <span>C++</span>
+            </div>
+            <div class="progress-line cpp">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <svg
+              style="width: 40px; height: 40px"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>NumPy</title>
+              <path
+                d="M10.315 4.876L6.3048 2.8517l-4.401 2.1965 4.1186 2.0683zm1.8381.9277l4.2045 2.1223-4.3622 2.1906-4.125-2.0718zm5.6153-2.9213l4.3193 2.1658-3.863 1.9402-4.2131-2.1252zm-1.859-.9329L12.021 0 8.1742 1.9193l4.0068 2.0208zm-3.0401 16.7443V24l4.7107-2.3507-.0053-5.3085zm4.7037-4.2057l-.0052-5.2528-4.6985 2.3356v5.2546zm5.6553-.9845v5.327l-4.0178 2.0052-.0029-5.3028zm0-1.8626V6.4214l-4.0253 2.001.0034 5.2633zM11.2062 11.571L8.0333 9.9756v6.895s-3.8804-8.2564-4.2399-8.998c-.0463-.0957-.2371-.2007-.2858-.2262C2.8118 7.2812.773 6.2485.773 6.2485V18.43l2.8204 1.5076v-6.3674s3.8392 7.3775 3.878 7.458c.0389.0807.4245.8582.8362 1.1314.5485.363 2.8992 1.7766 2.8992 1.7766z"
+              />
+            </svg>
+
+            <div class="info">
+              <span>Numpy</span>
+            </div>
+            <div class="progress-line numpy">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <svg
+              style="width: 40px; height: 40px"
+              role="img"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>pandas</title>
+              <path
+                d="M16.922 0h2.623v18.104h-2.623zm-4.126 12.94h2.623v2.57h-2.623zm0-7.037h2.623v5.446h-2.623zm0 11.197h2.623v5.446h-2.623zM4.456 5.896h2.622V24H4.455zm4.213 2.559h2.623v2.57H8.67zm0 4.151h2.623v5.447H8.67zm0-11.187h2.623v5.446H8.67Z"
+              />
+            </svg>
+
+            <div class="info">
+              <span>Pandas</span>
+            </div>
+            <div class="progress-line pandas">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i
+              style="width: 40px; height: 40px"
+              class="fa-solid fa-chart-simple"
+            ></i>
+            <div class="info">
+              <span>Matplotlib&Seaborn</span>
+            </div>
+            <div class="progress-line matplot">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <img
+              src="https://cdn.simpleicons.org/mysql"
+              width="40"
+              alt="MySQL Icon"
+            />
+
+            <div class="info">
+              <span>SQL</span>
+            </div>
+            <div class="progress-line sql">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <img
+              src="https://scikit-learn.org/stable/_static/scikit-learn-logo-small.png"
+              width="40"
+              alt="Sk-Learn Icon"
+            />
+
+            <div class="info">
+              <span>Sklearn</span>
+            </div>
+            <div class="progress-line Sklearn">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+              width="40"
+              alt="Git Icon"
+            />
+
+            <div class="info">
+              <span>Git</span>
+            </div>
+            <div class="progress-line git">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <svg
+              style="width: 40px; height: 40px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>TensorFlow</title>
+              <path
+                d="M19.6 12l.1 4.7-3.1-1.8v6.7L12.5 24V0l10.2 5.9v5.3l-6.1-3.6v2.7zM1.3 5.9L11.5 0v24l-4.1-2.4v-14l-6.1 3.6z"
+              />
+            </svg>
+            <div class="info">
+              <span>TensorFlow</span>
+            </div>
+            <div class="progress-line tensorflow">
+              <span></span>
+            </div>
+          </div>
+          <div class="bar">
+            <i
+              class="fa-solid fa-link fa-2x"
+              style="
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            ></i>
+            <div class="info">
+              <span>LangChain</span>
+            </div>
+            <div class="progress-line langchain">
+              <span></span>
+            </div>
+          </div>
         </div>
-        
-        
-        
-        <div class="container1">
-            <h1 class="heading">Professional Skills</h1>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Creativity</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Communication</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">Problem Solving</div>
-            </div>
-            <div class="radial-bars">
-                <svg x="0px" y="0px" viewBox="0 0 200 200">
-                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                </svg>
-                <div class="percentage">100%</div>
-                <div class="text">TeamWork</div>
-            </div>
-        
-        </div>
-        
+      </div>
     </section>
 
     <section>
-        <!-- fixed duplicate id usage; outer identifies the portfolio area -->
-        <div id="portfolio">
-            <div class="main-text">
-                <h2>Latest<span> Project</span></h2>
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="netflix.png">
-                        <div class="layer">
-                            <h5>Netflix Genre Analysis</h5>
-                            <p>In this project, I analyzed Netflix titles to explore popular genres, their distribution,
-                                and viewing trends...</p>
-                            <a href="https://github.com/Santosh-Chapagain"><i class="bx bx-link-external"
-                                    style="color:aliceblue"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="youtube.png">
-                        <div class="layer">
-                            <h5>Youtube Trend Analysis</h5>
-                            <p>In this project, I analyzed trending YouTube video data to identify patterns in titles,
-                                tags, categories, and view counts...</p>
-                            <a href="https://github.com/Santosh-Chapagain"><i class="bx bx-link-external"
-                                    style="color:aliceblue"></i></a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <img src="topskill.png">
-                        <div class="layer">
-                            <h5>Job Trend Analysis</h5>
-                            <p>In this project, I analyzed LinkedIn job posting data to uncover trends in job titles,
-                                industries, and required skills...</p>
-                            <a href="https://github.com/Santosh-Chapagain"><i class="bx bx-link-external"
-                                    style="color:aliceblue"></i></a>
-                        </div>
-                    </div>
-                </div>
+      <!-- fixed duplicate id usage; outer identifies the portfolio area -->
+      <div id="portfolio">
+        <div class="main-text">
+          <h2>Latest<span> Project</span></h2>
+          <div class="portfolio-content">
+            <!-- Project 1 -->
+            <div class="row">
+              <img src="images/youtube-ai-chatbot.png" alt="YouTube AI Chatbot" />
+              <div class="layer">
+                <h5>YouTube AI Chatbot</h5>
+                <p>
+                  A powerful AI tool that takes any YouTube video URL and allows
+                  users to ask questions about the video content, unlocking
+                  instant insights.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
             </div>
+            <!-- Project 2 -->
+            <div class="row">
+              <img src="images/email-ai-assistant.png" alt="Email AI Assistant" />
+              <div class="layer">
+                <h5>Email AI Assistant</h5>
+                <p>
+                  An innovative AI tool that automatically writes and sends
+                  professional emails based on your subject, context, and
+                  recipient details.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="row">
+              <img
+                src="images/restaurant-recommender.png"
+                alt="Restaurant Recommender"
+              />
+              <div class="layer">
+                <h5>Restaurant Recommender</h5>
+                <p>
+                  An end-to-end recommendation engine that instantly suggests
+                  personalized top restaurants based on user's favorite dishes,
+                  budget, and location.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="row">
+              <img
+                src="images/house-price-prediction.png"
+                alt="House Price Prediction"
+              />
+              <div class="layer">
+                <h5>House Price Prediction</h5>
+                <p>
+                  A robust web app powered by a stacking ensemble (Decision
+                  Tree, Random Forest, Lasso, Gradient Boosting) with Ridge
+                  Regression for accurate property estimates.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="row">
+              <img src="images/movie-recommender.png" alt="Movie Recommender System" />
+              <div class="layer">
+                <h5>Movie Recommender System</h5>
+                <p>
+                  A content-based movie recommender web app built with Python
+                  and Streamlit, utilizing cosine similarity to suggest
+                  personalized movie choices.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="row">
+              <img
+                src="images/rag-teaching-assistant.png"
+                alt="AI Teaching Assistant"
+              />
+              <div class="layer">
+                <h5>AI Teaching Assistant (RAG)</h5>
+                <p>
+                  A RAG-based tool that scans video content to identify the
+                  precise start and end timestamps for any taught concept,
+                  streamlining the learning process.
+                </p>
+                <a href="#"
+                  ><i class="bx bx-link-external" style="color: aliceblue"></i
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ======== CERTIFICATES SECTION ======== -->
+    <section class="certificates" id="certificates">
+      <div class="main-text">
+        <h2>My <span>Certificates</span></h2>
+      </div>
+      <div class="certificate-content">
+        <!-- Box 1: Oracle -->
+        <div class="cert-box">
+          <div class="cert-img">
+            <img src="images/oracle-cert.png" alt="Oracle Certified Professional" />
+          </div>
+          <div class="cert-info">
+            <h4>OCI Data Science Professional</h4>
+            <p>Oracle Cloud Infrastructure 2025 Certified</p>
+            <a
+              href="https://brm-certview.oracle.com/ords/certview/ecertificate?ssn=OC7454179&trackId=OCI25DSOCP&key=ce11114e6f9239f4d8509de04f52d48b86862067"
+              class="read-more"
+              >View Credential <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Box 2: DataCamp -->
+        <div class="cert-box">
+          <div class="cert-img">
+            <img
+              src="images/datacamp-cert.png"
+              alt="Associate Data Scientist by DataCamp"
+            />
+          </div>
+          <div class="cert-info">
+            <h4>Associate Data Scientist</h4>
+            <p>Certified by DataCamp</p>
+            <a
+              href="https://www.datacamp.com/certificate/DSA0012096608834"
+              class="read-more"
+              >View Credential <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Box 3: CodeWithHarry -->
+        <div class="cert-box">
+          <div class="cert-img">
+            <img
+              src="images/data-science-course-cert.png"
+              alt="The Ultimate Job Ready Data Science Course"
+            />
+          </div>
+          <div class="cert-info">
+            <h4>Job Ready Data Science</h4>
+            <p>Certified by CodeWithHarry</p>
+            <a href="#" class="read-more"
+              >View Credential <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+        <!-- Box 4: IBM -->
+        <div class="cert-box">
+          <div class="cert-img">
+            <img src="images/python-101-cert.png" alt="Python 101 for Data Science" />
+          </div>
+          <div class="cert-info">
+            <h4>Python 101 for DS</h4>
+            <p>IBM / Cognitive Class</p>
+            <a
+              href="https://courses.cognitiveclass.ai/certificates/b40bd5db58214c0cb5e28d041a1145a5"
+              class="read-more"
+              >View Credential <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="contact" id="contact">
+      <div class="contact-container">
         <div class="contact-text">
-            <h2>Contact <span>Me</span></h2>
-            <h4>Let's work together </h4>
-            <p>I’m always open to discussing new opportunities, collaborations, or any questions you may have about my
-                work. Feel free
-                to reach out if you want to connect, discuss a project, or simply have a chat about data, development,
-                or tech. I’ll get
-                back to you as soon as possible!</p>
-            <div class="contact-list">
-                <li><i class="fa fa-envelope"></i>santoahsharam98@gmail.com</li>
-                <li><i class="fa fa-phone"></i>9761835424</li>
+          <h2>Contact <span>Me</span></h2>
+          <h4>Let's connect and build something great</h4>
+          <p>
+            I’m always open to discussing new opportunities, collaborations, or
+            any questions you may have. Feel free to reach out!
+          </p>
+          <div class="contact-list">
+            <div class="contact-item">
+              <i class="fa fa-envelope"></i>
+              <div class="item-info">
+                <span>Email</span>
+                <p>santoahsharam98@gmail.com</p>
+              </div>
             </div>
-            <div class="contact-icons">
-                <a href="https://www.facebook.com/santosh.chapagain.376"><i class="bx bxl-facebook-circle"></i></a>
-                <a href="https://www.instagram.com/santosz_79/"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/santosh-chapagain-041629259/"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/Santosh-Chapagain"><i class="bx bxl-github"></i></a>
+            <div class="contact-item">
+              <i class="fa fa-phone"></i>
+              <div class="item-info">
+                <span>Phone</span>
+                <p>9761835424</p>
+              </div>
             </div>
+          </div>
         </div>
+
+        </div>
+      </div>
     </section>
 
-    <script src="main.js"></script>
-</body>
-
+    <script src="js/main.js"></script>
+  </body>
 </html>
