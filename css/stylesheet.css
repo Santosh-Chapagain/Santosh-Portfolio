@@ -453,11 +453,11 @@ body {
 }
 
 .progress-line.c span {
-    width: 90%;
+    width: 100%;
 }
 
 .progress-line.cpp span {
-    width: 85%;
+    width: 100%;
 }
 
 .progress-line.numpy span {
@@ -482,13 +482,15 @@ body {
     width: 100%;
 }
 .progress-line.tensorflow span {
-    width: 90%;
+    width: 100%;
 }
 .progress-line.langchain span {
-    width: 85%;
+    width: 100%;
 }
 
-
+.progress-line.langgraph span {
+    width: 100%;
+}
 
 /* ======== PORTFOLIO SECTION ======== */
 #portfolio {
